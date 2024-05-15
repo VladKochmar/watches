@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:regular@display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:regular,700@display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  @apply max-w-container mx-auto px-4;
+}
+
+.title {
+  @apply font-title text-white text-2xl sm:text-4xl font-bold text-center uppercase relative pb-5 sm:pb-10 before:absolute before:h-px before:w-28 before:bottom-0 before:left-1/2 before:-translate-x-2/4 before:bg-white;
+}
+
+.footer-title {
+  @apply font-title text-2xl uppercase mb-10;
+}
+
+.bg-img {
+  @apply absolute left-0 top-0 w-full h-full object-cover object-center;
+}
+
+.header {
+  @apply fixed top-0 left-0 z-20 w-full bg-black transition-transform duration-300;
+}
+
+.before-item {
+  @apply before:fixed before:top-0 before:left-0 before:z-40 before:w-full before:h-20 before:bg-gray-shaft before:-translate-y-full before:transition-transform before:duration-300 sm:before:hidden;
+}
+
+.lock {
+  @apply overflow-hidden touch-none;
+}
